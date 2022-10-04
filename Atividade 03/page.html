@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Tzeeter</title>
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        <meta charset="utf-8" />
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="navigation container col-2">
+                    <ul class="list-unstyled nav-list">
+                        <li class="text-sm-center text-md-start text-lg-start">
+                            <img class="mt-3 ms-3" alt="Tzeet logo" src="tiziu.png">
+                        </li>
+
+                        <li class="my-4 text-sm-center text-md-start text-lg-start">
+                            <a href="" class="navigation text-decoration-none text-dark px-3 py-2 rounded-pill">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                                    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+                                </svg>
+
+                                <div class="d-sm-none d-md-none d-lg-inline">
+                                    Home
+                                </div>
+
+                            </a>
+                        </li>
+                        
+                        <li class="my-4 text-sm-center text-md-start text-lg-start">
+                            <a href="" class="navigation text-decoration-none text-dark px-3 py-2 rounded-pill">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hash" viewBox="0 0 16 16">
+                                    <path d="M8.39 12.648a1.32 1.32 0 0 0-.015.18c0 .305.21.508.5.508.266 0 .492-.172.555-.477l.554-2.703h1.204c.421 0 .617-.234.617-.547 0-.312-.188-.53-.617-.53h-.985l.516-2.524h1.265c.43 0 .618-.227.618-.547 0-.313-.188-.524-.618-.524h-1.046l.476-2.304a1.06 1.06 0 0 0 .016-.164.51.51 0 0 0-.516-.516.54.54 0 0 0-.539.43l-.523 2.554H7.617l.477-2.304c.008-.04.015-.118.015-.164a.512.512 0 0 0-.523-.516.539.539 0 0 0-.531.43L6.53 5.484H5.414c-.43 0-.617.22-.617.532 0 .312.187.539.617.539h.906l-.515 2.523H4.609c-.421 0-.609.219-.609.531 0 .313.188.547.61.547h.976l-.516 2.492c-.008.04-.015.125-.015.18 0 .305.21.508.5.508.265 0 .492-.172.554-.477l.555-2.703h2.242l-.515 2.492zm-1-6.109h2.266l-.515 2.563H6.859l.532-2.563z"/>
+                                </svg>
+
+                                <div class="d-sm-none d-md-none d-lg-inline">
+                                    Explore
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li class="my-4 text-sm-center text-md-start text-lg-start">
+                            <a href="" class="navigation text-decoration-none text-dark px-3 py-2 rounded-pill">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                </svg>
+
+                                <div class="d-sm-none d-md-none d-lg-inline">
+                                    Notifications
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="my-4 text-sm-center text-md-start text-lg-start">
+                            <a href="" class="navigation text-decoration-none text-dark px-3 py-2 rounded-pill">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                                </svg>
+
+                                <div class="d-sm-none d-md-none d-lg-inline">
+                                    Messages
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li class="my-4 text-sm-center text-md-start text-lg-start">
+                            <a href="" class="navigation text-decoration-none text-dark px-3 py-2 rounded-pill">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                  </svg>
+
+                                <div class="d-sm-none d-md-none d-lg-inline">
+                                    Profile
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li class="my-4 text-sm-center text-md-start text-lg-start">
+                            <a href="" class="navigation text-decoration-none text-dark px-3 py-2 rounded-pill text-md-center text-sm-center">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                </svg>
+
+                                <div class="d-sm-none d-md-none d-lg-inline">
+                                    More
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="my-4 text-center">
+                            <button type="button" class="btn btn-primary rounded-pill px-3">
+
+                                <div class="d-sm-inline d-md-inline d-lg-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                                        <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                      </svg>
+                                </div>
+
+                                <span class="d-sm-none d-md-none d-lg-inline">
+                                    Tzeetar
+                                </span>
+                            </button>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="content container  col-lg-8 col-md-10 col-sm-10">
+                    <div class="profile border">
+        
+                        <div class="px-4">
+                            <div>
+                                <img class="rounded-circle mt-4 mb-2 me-4" alt="profile pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJAeHnthuUiOEJgEVWW6VXakwd8aKq7Psg6UMiiQKiKQ&s" width="133.5">
+    
+                                <div class="clearfix">
+                                    <button type="button" class="btn btn-primary rounded-pill float-end">Edit Profile</button>
+                                </div>
+                            </div>
+    
+                            <h4>Gabriel Ileis</h4>
+                            <h5 class="text-muted">@gabriel_ileis</h5>
+    
+                            <p class="bio">
+                                e o pintinho piu e o pintinho piu e o pintinho piu e o pintinho piu e o pintinho piu e o pintinho piu
+                            </p>
+    
+                            <div class="entry-info">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="" class="text-decoration-none text-muted">
+    
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                            </svg>
+    
+                                            Quixada
+                                        </a>
+                                    </li>
+    
+                                    <li class="list-inline-item">
+                                        <a href="" class="text-decoration-none text-muted">
+    
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                                                <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                                <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                            </svg>
+    
+                                            Joined July 2016
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+    
+                            <div class="statistics-info">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="" class="text-decoration-none">
+                                            <span class="statistic-numbers float-start me-1 fw-bold text-black">
+                                                3624
+                                            </span>
+                                            
+                                            <span class="text-muted">
+                                                Tzeets
+                                            </span>
+                                        </a>
+                                    </li>
+    
+                                    <li class="list-inline-item">
+                                        <a href="" class="text-decoration-none">
+                                            <div class="statistic-numbers float-start me-1 fw-bold text-black">
+                                                402
+                                            </div>
+    
+                                            <span class="text-muted">
+                                                Following
+                                            </span>
+                                        </a>
+                                    </li>
+    
+                                    <li class="list-inline-item">
+                                        <a href="" class="text-decoration-none">
+                                            <div class="statistic-numbers float-start me-1 fw-bold text-black">
+                                                70
+                                            </div>
+    
+                                            <span class="text-muted">
+                                                Followers
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="publications text-center p-0">
+                                    <div class="publication w-25 float-start py-2">
+                                        <a href="" class="text-decoration-none text-muted fw-bold">
+                                            Tzeets
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="publication w-25 float-start py-2">
+                                        <a href="" class="text-decoration-none text-muted fw-bold">
+                                            Tzeets & replies
+                                        </a>
+                                    </div>
+        
+                                    <div class="publication w-25 float-start py-2">
+                                        <a href="" class="text-decoration-none text-muted fw-bold">
+                                            Media
+                                        </a>
+                                    </div>
+
+                                    <div class="publication w-25 float-start py-2">
+                                        <a href="" class="text-decoration-none text-muted fw-bold">
+                                            Likes
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline">
+                        
+                        <div class="mx-5 mt-3">
+
+                            <div>
+                                <img class="m-1 rounded-circle" src="https://pbs.twimg.com/profile_images/1259892036053975041/x3CUR-xp_400x400.jpg" alt="profile picture" width="48">
+                            </div>
+
+                            <div>
+                                <span class="ms-1 text-black">
+                                    Buarque
+                                </span>
+                                <span class="ms-1 text-muted">
+                                    @_Buarqueanos
+                                </span>
+                                <span class="ms-1 text-muted">
+                                    8 de mar de 2021
+                                </span>
+                                
+                                <div>
+                                    Põe meia dúzia de Brahma pra gelar, muda a roupa de cama.
+                                    Eu tô voltando.
+                                </div>
+                            </div>
+
+
+                            <div class="text-center mt-2 mx-5">
+                                <div class="w-25 float-start text-muted">
+
+                                    <a href="" class="replyShare px-3 py-2 rounded-pill text-decoration-none">
+
+                                        <div class="replyShare-icon d-inline px-3 py-2 rounded-pill">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                                                <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                                            </svg>
+                                        </div>
+
+    
+                                        <span>
+                                            200
+                                        </span> 
+                                    </a>
+                                    
+                                </div>
+
+                                <div class="w-25 float-start text-muted">
+
+                                    <a href="" class="retzeet px-3 py-2 rounded-pill text-decoration-none">
+
+                                        <div class="retzeet-icon d-inline px-3 py-2 rounded-pill">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                                                <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+                                                <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+                                            </svg>
+                                        </div>
+    
+                                        <span>
+                                            100
+                                        </span>
+                                    </a>
+
+                                </div>
+
+                                <div class="w-25 float-start text-muted">
+                                    
+                                    <a href="" class="like px-3 py-2 rounded-pill text-decoration-none">
+
+                                        <div class="like-icon d-inline px-3 py-2 rounded-pill">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                            </svg>
+                                        </div>
+    
+                                        <span>
+                                            120
+                                        </span>
+                                    </a>
+
+                                </div>
+
+                                <div class="w-25 float-start text-muted">
+                                    
+                                    <a href="" class="replyShare-icon px-3 py-2 rounded-pill text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z"/>
+                                          </svg>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                          </div>
+                    </div>
+                </div>
+
+                <div class="container col-2 mt-2">
+
+                    <div class="container m-0 p-0 d-sm-none d-md-none d-lg-block">
+
+                        <div class="input-search rounded-pill px-2 py-2">
+
+                            <div class="d-inline">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </div>
+    
+                            <input class="ms-1 border-0 rounded-pill input-search" type="search" placeholder="Username" aria-label="Username">
+    
+                        </div>
+                        
+                        <div class="suggested-users rounded-4 mt-3 px-2 py-1">
+                           
+                            <div class="d-flex align-items-center my-2">
+                                <div class="flex-shrink-0">
+                                  <img class="rounded-circle" src="https://i.scdn.co/image/ab6761610000e5ebfbcc6d6e7ecde01ab1f73375" alt="profile picture" width="48" height="48">
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <a href="" class="text-decoration-none">
+                                        Vinicius
+                                    </a>
+
+                                    <button class="btn btn-primary float-end">
+                                        Seguir
+                                    </button>
+                                </div>
+                            </div>
+                           
+                            <div class="d-flex align-items-center my-2">
+                                <div class="flex-shrink-0">
+                                  <img class="rounded-circle" src="https://jpimg.com.br/uploads/2017/04/3110395943-acompanhe-participacao-de-seu-jorge-no-panico.jpg" alt="profile picture" width="48" height="48">
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <a href="" class="text-decoration-none">
+                                        Seu Jorge
+                                    </a>
+    
+                                    <button class="btn btn-primary float-end">
+                                        Seguir
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center my-2">
+                                <div class="flex-shrink-0">
+                                  <img class="rounded-circle" src="https://yt3.ggpht.com/ytc/AMLnZu-QMob3uTbY_8KYIYlZf03PMGaIiqkSQx_MbGar=s900-c-k-c0x00ffffff-no-rj" alt="profile picture" width="48" height="48">
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <a href="" class="text-decoration-none">
+                                        Ben Jor
+                                    </a>
+
+                                    <button class="btn btn-primary float-end">
+                                        Seguir
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="ms-5">
+                                <a href="">
+                                    Mostrar mais
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
+
+</html>
